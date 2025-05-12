@@ -3,91 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Thar Final Project</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tagesschrift&family=Tektur:wght@400..900&display=swap" rel="stylesheet">    <script src="javascript/scriptaculous.js"></script>
-    <script src="script.js"></script>
-
+    <script type = "text/javascript" src = "/javascript/prototype.js"></script>
+    <script type = "text/javascript" src = "/javascript/scriptaculous.js"></script>
+    <script src="script.js"></script> 
 </head>
-<body>
-    <header>
-        <h2>Final Project (Part 1) </h2>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="box1">
-                    <div class="font_header">
-                        <h2>font number 1</h2>
-                        <select name="font styles" id="font_dropdown_1" onchange="changeFontStyle1()" class="dropdown">
-                            <option value=""></option>
-                            <option value="bold">Bold</option>
-                            <option value="italic">Italic</option>
-                            <option value="regular">Regular</option>
-                            <option value="light">Light</option>
-                            <option value="black">Black</option>
-                        </select>
-                    </div>
-                    <p id="text_1"> something</p>
-                </div>
-                <div class="line"></div>
-                <div class="box2">
-                    <div class="font_header">
-                        <h2>font number 2</h2>
-                        <select name="font styles" id="font_dropdown_2" onchange="changeFontStyle2()" class="dropdown">
-                            <option value=""></option>
-                            <option value="bold">Bold</option>
-                            <option value="italic">Italic</option>
-                            <option value="regular">Regular</option>
-                            <option value="light">Light</option>
-                            <option value="black">Black</option>
-                        </select>
-                    </div>
-                    <p id="text_2"> something</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="box3">
-                    <div class="font_header">
-                        <h2>font number 3</h2>
-                        <select name="font styles" id="font_dropdown_3" onchange="changeFontStyle3()" class="dropdown">
-                            <option value=""></option>
-                            <option value="bold">Bold</option>
-                            <option value="italic">Italic</option>
-                            <option value="regular">Regular</option>
-                            <option value="light">Light</option>
-                            <option value="black">Black</option>
-                        </select>
-                    </div>
-                    <p id="text_3"> something </p>
-                </div>
-                <div class="line"></div>
-                <div class="box4">
-                    <div class="font_header">
-                        <h2>font number 4</h2>
-                        <select name="font styles" id="font_dropdown_4" onchange="changeFontStyle4()" class="dropdown">
-                            <option value=""></option>
-                            <option value="bold">Bold</option>
-                            <option value="italic">Italic</option>
-                            <option value="regular">Regular</option>
-                            <option value="light">Light</option>
-                            <option value="black">Black</option>
-                        </select>
-                    </div>
-                    <p id="text_4"> something</p>
-                </div>
-
-            </div>
-            
+<body onload="initialize()">
+    <h2 class="header">Thar Final Project Part 1</h2>
+    <hr>
+    <div class="box1" id="feature">
+        <div class="feature"></div>
+        <div class="text">
+            <h2>Some thing About Product</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nesciunt.</p>
+            <button onclick="feature()" class="feature_btn">Buy Now</button>
         </div>
-    
-    
-      
-
-    </main>
+    </div>
+    <hr>
+    <h2 id="products">Browse our products</h2>
+    <div class="box2" id="product-box">
+        <div class="products" id="product0"> <button class="btn" onclick="buynow('product0')">Buy Now</button></div>
+        <div class="products" id="product1"> <button class="btn" onclick="buynow('product1')">Buy Now</button></div>
+        <div class="products" id="product2"> <button class="btn" onclick="buynow('product2')">Buy Now</button></div>
+        <div class="products" id="product3"> <button class="btn" onclick="buynow('product3')">Buy Now</button></div>
+        <div class="products" id="product4"> <button class="btn" onclick="buynow('product4')">Buy Now</button></div>
+        <div class="products" id="product5"> <button class="btn" onclick="buynow('product5')">Buy Now</button></div>
+        <div class="products" id="product6"> <button class="btn" onclick="buynow('product6')">Buy Now</button></div>
+        <div class="products" id="product7"> <button class="btn" onclick="buynow('product7')">Buy Now</button></div>
+    </div>
+    <hr>
+    <h2 id="contact">Contact for more details</h2>
+    <form  method= "post" id="form" onsubmit="return submitForm()">
+        <div class="name">
+            <input type="text" placeholder="First Name" class="name" id="first_name"/>
+            <input type="text" placeholder="Last Name" class="name" id="last_name"/>
+        </div>
+        <div class="email">
+            <input type="email" placeholder="Email" class="email" id="email"/>
+            <input type="number" placeholder="Phone Number" class="email" id="phone_number"/>
+        </div>
+        
+        <textarea placeholder="Message" class="message"></textarea>
+        <button type="submit" class="submit_btn">Send Message</button>
+    </form>
 </body>
 </html>

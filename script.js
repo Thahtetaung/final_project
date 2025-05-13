@@ -1,42 +1,77 @@
-    function initialize() {
-        new Effect.BlindDown('product-box', { duration: 2});
-    }
+function changeFontStyle1(){
+            var text1 = document.getElementById('text_1');
+            var selected1 = document.getElementById('font_dropdown_1').value;
+            if(selected1 === "bold"){
+                text1.style.fontWeight = "700"
+                new Effect.BlindDown(text1, {duration:1});
+            }else if (selected1 === 'italic'){
+                text1.style.fontStyle = "italic"
+                new Effect.BlindDown(text1, {duration:1});
+            }else if (selected1 === 'regular'){
+                text1.style.fontStyle = "normal";
+                text1.style.fontWeight = "500";
+                new Effect.BlindDown(text1, {duration:1});
+            }else if (selected1 === "light"){
+                text1.style.fontWeight = "300"
+                new Effect.BlindDown(text1, {duration:1});
+                
+            }else if (selected1 === "black"){
+                text1.style.fontWeight = "900"
+                new Effect.BlindDown(text1, {duration:1});
+            }else {
+                text1.style.fontStyle = "normal";
+                text1.style.fontWeight = "normal";
+                new Effect.BlindDown(text1, {duration:1});
+            }};
 
-    function feature(){
-        new Effect.Squish("feature" , {duration: 2})
-    }
-    function buynow(productid){
-        new Effect.DropOut(productid , {duration : 2})
-    }
+            function changeFontStyle2(){
+            var text2 = document.getElementById('text_2');
+            var selected2 = document.getElementById('font_dropdown_2').value;
+            if(selected2 === "bold"){
+                text2.style.fontWeight = "700"
+                new Effect.BlindDown(text2, {duration:1});
+            }else if (selected2 === 'italic'){
+                text2.style.fontStyle = "italic"
+                new Effect.BlindDown(text2, {duration:1});
+            }else if (selected2 === 'regular'){
+                text2.style.fontStyle = "normal";
+                text2.style.fontWeight = "500";
+                new Effect.BlindDown(text2, {duration:1});
+            }else if (selected2 === "light"){
+                text2.style.fontWeight = "300"
+                new Effect.BlindDown(text2, {duration:1});
+                
+            }else if (selected2 === "black"){
+                text2.style.fontWeight = "900"
+                new Effect.BlindDown(text2, {duration:1});
+            }else {
+                text2.style.fontStyle = "normal";
+                text2.style.fontWeight = "normal";
+                new Effect.BlindDown(text2, {duration:1});
+            }};
 
-function submitForm() {
-    
-  var firstName = document.getElementById('first_name');
-  var lastName = document.getElementById('last_name');
-  var email = document.getElementById('email');
-  var phoneNumber = document.getElementById('phone_number');
-  var hasError = false;
-
-  if (firstName.value === "") {
-    new Effect.Shake(firstName);
-    firstName.style.border = "2px solid red"
-    hasError = true;
-  }
-  if (lastName.value === "") {
-    new Effect.Shake(lastName);
-    lastName.style.border = "2px solid red"
-    hasError = true;
-  }
-  if (email.value === "") {
-    new Effect.Shake(email);
-    email.style.border = "2px solid red"
-    hasError = true;
-  }
-  if (phoneNumber.value === "") {
-    new Effect.Shake(phoneNumber);
-    phoneNumber.style.border = "2px solid red"
-    hasError = true;
-  }
-  return false;
-
-}
+            function changeFontStyle3(){
+            var text3 = document.getElementById('text_3');
+            var selected3 = document.getElementById('font_dropdown_3').value;
+            if(selected3 === "bold"){
+                text3.style.fontWeight = "700"
+                new Effect.BlindDown(text3, {duration:1});
+            }else if (selected3 === 'italic'){
+                text3.style.fontStyle = "italic"
+                new Effect.BlindDown(text3, {duration:1});
+            }else if (selected3 === 'regular'){
+                text3.style.fontStyle = "normal";
+                text3.style.fontWeight = "500";
+                new Effect.BlindDown(text3, {duration:1});
+            }else if (selected3 === "light"){
+                text3.style.fontWeight = "300"
+                new Effect.BlindDown(text3, {duration:1});
+                
+            }else if (selected3 === "black"){
+                text3.style.fontWeight = "900"
+                new Effect.BlindDown(text3, {duration:1});
+            }else {
+                text3.style.fontStyle = "normal";
+                text3.style.fontWeight = "normal";
+                new Effect.BlindDown(text3, {duration:1});
+            }};
